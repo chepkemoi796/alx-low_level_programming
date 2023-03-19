@@ -2,41 +2,33 @@
 #include <time.h>
 #include <stdio.h>
 /* more headers goes there */
-/*
- * main - Entry point
- *
- * Return 0 always (Success)
- *
- */
 
 /* betty style doc for function main goes there */
+/**
+ * main - entry point to print and asign a new number to avariable each time it is executed
+ *
+ * Return: (0) Always (Success)
+ */
 int main(void)
 {
-int n = rand() - RAND_MAX / 2;
+int n;
+int a;
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 /* your code goes there */
+a = n % 10;
+if (a > 5)
 {
-printf("enter a random interger: ");
+printf("Last digit of %d is %d and is greater than 5\n", n, a);
 }
-if (n > 5)
+else if (a == 0)
 {
-printf("Last digit of: ");
-printf("is: ");
-printf("and is greater than 5\n");
+printf("Last digit of %d is %d and is 0\n", n, a);
 }
-else if (n == 0)
+else
 {
-printf("Last digit of: ");
-printf("is: ");
-printf("and is 0\n");
-}
-else if (n < 6)
-{
-printf("Last digit of: ");
-printf("is: ");
-printf("and is less than 6 and not 0\n");
+printf("Last digit of %d is %d and is less than 6 and not 0\n", n, a);
 }
 return (0);
 }
