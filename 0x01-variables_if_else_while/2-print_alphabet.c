@@ -2,16 +2,16 @@
 /**
  * main - Entry point
  *
- * Return (0) always (Success)
+ * Return: (0) Always (Success)
  *
  */
 int main(void)
 {
-char a;
-char z;
-for (char a = 0; a-z; a++)
+char c;
+for ((c = 'a'); (c = 'z'); c++)
 {
-putchar(a-z);
+putchar(c);
+putchar('\n');
 }
-return 0;
+return (0);
 }
