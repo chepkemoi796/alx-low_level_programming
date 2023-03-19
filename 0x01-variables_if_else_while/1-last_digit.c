@@ -5,7 +5,7 @@
 
 /* betty style doc for function main goes there */
 /**
- * main - entry point to print and asign a new number to avariable each time it is executed
+ * main - entry point
  *
  * Return: (0) Always (Success)
  */
@@ -13,7 +13,6 @@ int main(void)
 {
 int n;
 int a;
-
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 /* your code goes there */
