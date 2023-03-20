@@ -13,10 +13,10 @@ int i;
 long int li;
 long long int lli;
 float f;
-printf("size a of char: %d\n", c);
-printf("size a of int: %d\n", i);
-printf("size a of long int: %d\n", li);
-printf("size a of long long int: %d\n", lli);
-printf("size a of float: %d\n", f);
+printf("size a of char: %d\n", sizeof(c));
+printf("size a of int: %d\n", sizeof(i));
+printf("size a of long int: %d\n", sizeof(li));
+printf("size a of long long int: %d\n", sizeof(lli));
+printf("size a of float: %d\n", sizeof(f));
 return (0);
 }
