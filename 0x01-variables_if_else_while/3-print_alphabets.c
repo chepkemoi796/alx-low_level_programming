@@ -16,5 +16,6 @@ for ((qb = 'A'); (qb <= 'Z'); qb++)
 {
 putchar(qb);
 }
+putchar('\n');
 return (0);
 }
