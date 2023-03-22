@@ -1,8 +1,5 @@
-#ifndef MAIN_H_
-#define MAIN_H_
+#ifndef main_h
+#define main_h
 
-void putcha();
-{
-printf("_putchar\n");
-}
+int _putchar(char);
 #endif
