@@ -2,9 +2,16 @@
 #include <string.h>
 /**
  * _strlen - prints length of string
- * @*s: pointer 
+ * @*s: pointer
+ * @*str: pointer to variable address
+ * @len: length of string
+ * Return: (len)
  */
 int _strlen(char *s)
 {
-*s[] = "My first strlen!";
+int len = 0;
+char *str;
+str = s;
+len = strlen(str);
+return (len);
 }
