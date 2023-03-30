@@ -5,8 +5,16 @@
  */
 char *string_toupper(char *)
 {
-char str[];
-char ptr
+char str;
 int i = 0;
-for (i = 0; str[i] != '\o'; i++)
+char *ptr;
+ptr = string_toupper(str);
+if ((i = 0); (ptr[i] != '\0'); i++)
+{
+if (ptr[i] >= 'a' && ptr[i] <= 'z')
+{
+ptr[i] = ptr[i] - 32;
+}
+}
+return (ptr);
 }
