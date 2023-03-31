@@ -2,6 +2,8 @@
 #include <stdio.h>
 /**
  * reverse_array - reverse content of string
+ * @i: variable for index
+ * @q: variable
  * @*a: pointer
  * @a: value of pointer
  * @n: variable 
@@ -10,12 +12,11 @@
 void reverse_array(int *a, int n)
 {
 int i;
-char q;
-for (i = 0; n / 2; i++)
+int q;
+for (i = 0; i < n--; i++)
 {
 q = a[i];
-a[i] = a[n - 1 - i];
-a[n - 1 - i] = a[i];
+a[i] = a[n];
+a[n] = q;
 }
-printf("%d", q);
 }
