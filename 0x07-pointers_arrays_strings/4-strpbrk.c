@@ -6,8 +6,7 @@
  * @*accept: pointer
  * @s: variable
  * @accept: variable
- * @t: variable
- * Return: character data type
+ * Return: t
  */
 char *_strpbrk(char *s, char *accept)
 {

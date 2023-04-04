@@ -7,7 +7,6 @@
  * @haystack: string to be scanned
  * @needle:string to be searched with
  * @*t: pointer
- * @t: charcter to be returned
  * Return: t
  */
 char *_strstr(char *haystack, char *needle)
