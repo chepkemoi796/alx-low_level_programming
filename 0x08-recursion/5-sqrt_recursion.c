@@ -4,6 +4,6 @@
 int _sqrt_recursion(int n)
 {
 int r;
-r = sqrt(int (n));
+r = sqrt((n) + 1);
 return (r);
 }
