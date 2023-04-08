@@ -1,21 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ * main - entry point
+ * @argc: argument count
+ * @argv[]: argument list
+ * @mul: multiplication variable
+ * Return: (0)
+ */
 int main(int argc, char* argv[])
 {
-int count, a, b, mul;
-if (argc < 2)
+int mul;
+if ( argc < 2)
 {
 printf("Error\n");
 return (1);
 }
 else
 {
-for (count = 0; count < argc; count++)
-{
-mul = a * b;
-printf("argv[%d] argv[%d] is %s %s\n", count, count, a, b);
+mul = (atoi(argv[1]) * atoi(argv[2]));
 printf("%d\n", mul);
-}
 }
 return (0);
 }

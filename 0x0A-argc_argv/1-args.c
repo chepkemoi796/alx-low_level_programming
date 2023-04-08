@@ -1,8 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
-int main(int argc, char* argv[] __attribute__((unused))) 
+/**
+ * main - entry point
+ * @argc: number of arguments
+ * @argv[]: list of arguments
+ * @__attribute__((unused)): compile unused functions and variables
+ * @count: index
+ * Return: (0)
+ */
+int main(int argc, char* argv[]__attribute__((unused))) 
 {
-while (argc >= 0)
+int count;
+for ( count = 0; count < argc; count++)
+{
 printf("%d\n", argc);
+}
 return (0);
 }

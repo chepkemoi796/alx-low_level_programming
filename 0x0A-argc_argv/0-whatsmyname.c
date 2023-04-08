@@ -1,5 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ * main - entry point
+ * @argc: number of arguments
+ * @argv[]: argument list
+ * @count: index
+ * Return: (0)
+ */
 int main(int argc, char *argv[])
 {
 int count;
