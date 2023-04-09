@@ -2,20 +2,19 @@
 #include <stdio.h>
 int is_prime_number(int n)
 {
-int r;
-int count;
-printf("enter positive number:");
-scanf("%d", &n);
-/* reads number entered */
-for (count = 2; count < n; count++)
+int q;
+if (n == 1)
 {
-if (n % count == 0)
+return (0);
+}
+else if (n % q == && q != n && q != 1)
+{
+return (0);
+}
+else if (n %q == 0 && q == n)
 {
 return (1);
 }
 else
-{
-return (0);
-}
-}
+return (is_prime_number(q + 1, n);
 }
