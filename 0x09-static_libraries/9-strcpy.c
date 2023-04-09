@@ -1,9 +1,9 @@
 #include "main.h"
 /**
  * *_strcpy - copies the string pointed to by src
- * @l: integer variable
- * @x: variable
  * @*dest: pointer
+ * @dest: variable
+ * @src: variable
  * @*src: pointer for variable
  * Return: the pointer to dest
  */

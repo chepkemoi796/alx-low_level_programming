@@ -1,13 +1,8 @@
 #include "main.h"
 /**
  * _atoi - convert a string to an integer
- * @i: variable
- * @d: variable
- * @len: variable
- * @f: variable
- * @digit: variable
- * @n: variable
  * @*s: pointer
+ * @s: variable
  * Return: (0)
  */
 int _atoi(char *s)
@@ -45,6 +40,6 @@ f = 0;
 i++;
 }
 if (f == 0)
-return(0);
+return (0);
 }
 }

@@ -1,12 +1,9 @@
 #include "main.h"
 /**
- * _isalpha: entry point
+ * _isalpha - printsa to z
+ * @c: variable
  *
- *
- * Returns 1 if c is a letter, lowercase or uppercase
- *
- * Returns 0 otherwise
- *
+ * Return: (c)
  */
 int _isalpha(int c)
 {
