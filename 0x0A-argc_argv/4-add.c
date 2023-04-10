@@ -1,25 +1,34 @@
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ * main - entry point
+ * @argc: number of arguments
+ * @argv: array
+ * Return: (0)
+ */
 int main(int argc, char *argv[])
 {
-int i; int sum = 0;
-for (i = 1; i < argc; i++)
-{
+int count;
+int sum = 0;
 if (argc < 1)
 {
 printf("0\n");
 }
-if (argv[i] < 0 || argv[i] > 9)
+else
+{
+for (count = 1; count < argc; count++)
+{
+if (count < '0' && count > '9')
 {
 printf("Error\n");
-return (1);
+return (0);
 }
 else
 {
-printf("argv[%d] = %s\n", i, argv[i]);
-sum = sum + atoi(argv[i]);
+sum = sum + atoi(argv[count]);
 }
-printf("result = %d\n", sum);
+}
+printf("%d\n", sum);
 }
 return (0);
 }
