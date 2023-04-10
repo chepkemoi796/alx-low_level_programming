@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 int count;
-int mul = 1;
+int mul;
 if (argc < 2)
 {
 printf("Error\n");
@@ -18,7 +18,7 @@ else
 {
 for (count = 1; count < argc; count++)
 {
-mul = (mul * atoi(argv[count]));
+mul = atoi(argv[count - 1]) * atoi(argv[count]);
 }
 printf("%d\n", mul);
 }
