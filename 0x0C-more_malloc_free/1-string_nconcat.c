@@ -2,35 +2,44 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+/**
+ * *string_nconcat -  concatenates two strings
+ * @s1: destination
+ * @s2: source
+ * Return: (s)
+ */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-unsigned int i, j;
-unsigned int len2, len1;
-char *concat;
-len1 = strlen(s1);
-scanf("%u", &len2);
-len2 = strlen(s2);
-scanf("%u", &len2);
-for (i = 0; i < len1; i++)
+char *s;
+unsigned int a = 0; 
+unsigned int b = 0; 
+unsigned int len1 = 0; 
+unsigned int len2 = 0;
+while (s1 && s1[len1])
+len1++;
+while (s2 && s2[len2])
+len2++;
+if (n < len2)
 {
-if (n >= len2)
-{
-for (j = 0; j < len2; j++)
-{
-scanf("%s", s2);
-}
+s = malloc(sizeof(char) * (len1 + n + 1));
 }
 else
 {
-while (j < n)
+s = malloc(sizeof(char) * (len1 + len2 + 1));
+}
+if (!s)
 {
-scanf("%s", s2);
-j++;
+return (NULL);
 }
+while (a < len1)
+{
+s[a] = s1[a];
+a++;
 }
+while (n < len2 && a < (len1 + n))
+{
+s[a++] = s2[b++];
 }
-scanf("%s", s1);
-concat = (char*)malloc(sizeof(concat) * (i + j + 1));
-scanf("%s", concat);
-return (concat);
+s[a] = '\0';
+return (s);
 }

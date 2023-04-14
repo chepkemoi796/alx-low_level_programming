@@ -1,31 +1,18 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ * *malloc_checked - fucntion to print memory
+ * @*a: pointer returned to the memory
+ * Return: (a)
+ */
 void *malloc_checked(unsigned int b)
 {
-char *c;
-int *i;
-float *f;
-double *d;
-c =(char*) malloc(b * sizeof(c));
-if (c == NULL)
+void *a;
+a = malloc(b);
+if (a == NULL)
 {
 exit(98);
 }
-i = (int*)malloc(b * sizeof(i));
-if (i == NULL)
-{
-exit(98);
+return (a);
 }
-f = (float*)malloc(b * sizeof(f));
-if (f == NULL)
-{
-exit(98);
-}
-d = (double*) malloc(b * sizeof(d));
-if (d == NULL)
-{
-exit(98);
-}
-return (0);
-}	
