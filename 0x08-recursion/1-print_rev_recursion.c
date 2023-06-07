@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 /**
  *_print_rev_recursion - prints string in reverse
  *@s: string pointer

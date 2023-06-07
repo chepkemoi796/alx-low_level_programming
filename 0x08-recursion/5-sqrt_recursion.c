@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include "main.h"
 /**
  * _sqrt_recursion - print square root
  * @n: argument

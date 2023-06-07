@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include "main.h"
 /**
  * _pow_recursion - returns the power of a number
  *@x: base
