@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-/*
+/**
  * _pow_recursion - returns the power of a number
- *
+ *@x: base
+ *@y: power
  * Return: void
  */
 int _pow_recursion(int x, int y)
