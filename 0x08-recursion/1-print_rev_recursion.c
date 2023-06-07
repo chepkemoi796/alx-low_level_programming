@@ -7,6 +7,6 @@
  */
 void _print_rev_recursion(char *s)
 {
-_print_rev_Recursion(s + 1);
+_print_rev_recursion(s + 1);
 printf("%c", *s);
 }
