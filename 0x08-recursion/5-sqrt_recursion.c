@@ -8,7 +8,7 @@
  */
 int _sqrt_recursion(int n)
 {
-int b = sqrt(n);
+int b = sqrt((double)n);
 if (b <= 0)
 return (-1);
 return (b);
