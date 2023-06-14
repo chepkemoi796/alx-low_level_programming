@@ -4,8 +4,6 @@
  * **alloc_grid - return pointer to 2d array
  * @width: row
  * @height:column
- * @i:index
- * @j:index
  * Return: p
  */
 int **alloc_grid(int width, int height)
